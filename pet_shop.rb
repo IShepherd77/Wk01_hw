@@ -5,11 +5,11 @@ def pet_shop_name(shop)
 end
 
 def total_cash(shop)
-return shop[:admin][:total_cash]
+  return shop[:admin][:total_cash]
 end
 
 def add_or_remove_cash(shop, add_amount)
-shop[:admin][:total_cash] += add_amount
+  shop[:admin][:total_cash] += add_amount
 end
 
 def pets_sold(shop)
@@ -22,3 +22,8 @@ end
 #   sold = shop[:admin][:pets_sold]
 #   return sold
 # end
+
+def increase_pets_sold(shop, number_of_pets)
+  shop[:admin][:pets_sold] += number_of_pets
+  #binding.pry
+end
